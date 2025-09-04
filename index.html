@@ -2,44 +2,45 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Pulizia Terrazzi & Scale — Preventivi</title>
   <meta name="description" content="Pulizia professionale di terrazzi e scale condominiali a Parma — preventivo rapido via WhatsApp" />
   <style>
     :root{--bg:#f7fafc;--card:#fff;--accent:#0f172a;--muted:#55606a;--accent-2:#0ea5a4}
-    *{box-sizing:border-box}
-    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,var(--bg),#fff); color:var(--accent);}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
-    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:18px 0}
-    .hero-grid{display:flex;flex-direction:column;gap:14px}
-    h1{font-size:28px;margin:0;line-height:1.05}
-    p.lead{color:var(--muted);margin:0}
-    .cta{display:flex;gap:12px;margin-top:8px}
-    .btn{background:var(--accent);color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700}
-    .btn-outline{border:1px solid #e6e9ee;padding:10px 14px;border-radius:12px;text-decoration:none;color:var(--accent)}
-    .hero-photo{width:100%;height:220px;border-radius:14px;background-image:url('https://images.unsplash.com/photo-1598300187837-9e9f4b2fa98c?q=80&w=1200&auto=format&fit=crop');background-size:cover;background-position:center}
-    .badges{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
-    .badge{background:var(--card);padding:8px 12px;border-radius:12px;border:1px solid #eef2f7;color:var(--muted);font-weight:600}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,var(--bg),#fff); color:var(--accent); line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+    .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:14px;padding:6px 10px}
+    nav .btn{font-size:14px;padding:8px 14px}
 
-    /* services */
-    .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:22px}
-    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid #eef2f7}
-    .price{font-size:20px;font-weight:800}
+    .hero{display:grid;grid-template-columns:1fr;gap:16px;align-items:center;padding:18px 0}
+    .hero-grid{display:flex;flex-direction:column;gap:12px}
+    h1{font-size:22px;line-height:1.2}
+    p.lead{color:var(--muted)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;display:inline-block;text-align:center}
+    .btn-outline{border:1px solid #e6e9ee;padding:8px 12px;border-radius:12px;text-decoration:none;color:var(--accent)}
+    .hero-photo{width:100%;height:180px;border-radius:14px;background-image:url('https://images.unsplash.com/photo-1598300187837-9e9f4b2fa98c?q=80&w=1200&auto=format&fit=crop');background-size:cover;background-position:center}
+    .badges{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .badge{background:var(--card);padding:6px 10px;border-radius:12px;border:1px solid #eef2f7;color:var(--muted);font-weight:600;font-size:12px}
 
-    /* contact */
-    .contact{display:grid;grid-template-columns:1fr;gap:12px;margin-top:22px}
-    .contact-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid #eef2f7;font-size:14px}
+    .price{font-size:18px;font-weight:800}
+
+    .contact{display:grid;grid-template-columns:1fr;gap:16px;margin-top:22px}
     form{display:flex;flex-direction:column;gap:10px}
-    input,textarea{padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:14px}
-    button[type=submit]{background:var(--accent);color:#fff;padding:12px;border-radius:12px;border:0;font-weight:700}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:14px;width:100%}
+    button[type=submit]{background:var(--accent);color:#fff;padding:12px;border-radius:12px;border:0;font-weight:700;font-size:14px}
 
-    footer{margin-top:28px;padding:18px 0;color:var(--muted);font-size:14px}
+    footer{margin-top:28px;padding:18px 0;color:var(--muted);font-size:12px;text-align:center}
 
-    @media(min-width:800px){
+    @media(min-width:700px){
+      h1{font-size:28px}
       .hero{grid-template-columns:1fr 420px}
       .grid{grid-template-columns:repeat(3,1fr)}
       .contact{grid-template-columns:1fr 420px}
@@ -53,7 +54,7 @@
         <div class="logo">PT</div>
         <div>
           <div style="font-weight:800">Pulizia Terrazzi & Scale</div>
-          <div style="font-size:13px;color:var(--muted)">Servizi professionali in Parma</div>
+          <div style="font-size:12px;color:var(--muted)">Servizi professionali in Parma</div>
         </div>
       </div>
       <nav>
@@ -70,159 +71,78 @@
           <h1>Pulizia professionale di terrazzi e scale condominiali</h1>
           <p class="lead">Rimuoviamo muschio, macchie e sporco ostinato. Interventi rapidi, prodotti professionali e preventivo gratuito.</p>
           <div class="cta">
-            <a href="#contatti" class="btn">Richiedi preventivo</a>
-            <a href="#servizi" class="btn-outline">Scopri i servizi</a>
+            <a href="#contatti" class="btn">Preventivo</a>
+            <a href="#servizi" class="btn-outline">Servizi</a>
           </div>
-
           <div class="badges">
             <div class="badge">Sopralluogo gratuito</div>
             <div class="badge">Prodotti eco-friendly</div>
             <div class="badge">Garanzia lavoro</div>
           </div>
-
-          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-            <div class="card" style="flex:1">✅ Fattura e ricevuta</div>
-            <div class="card" style="flex:1">✅ Programmi periodici</div>
-          </div>
         </div>
-
         <aside>
           <div class="hero-photo"></div>
-          <div style="margin-top:8px;color:var(--muted);font-size:14px">Operiamo a <strong>Parma</strong> e provincia</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">Operiamo a <strong>Parma</strong> e provincia</div>
         </aside>
       </section>
 
       <section id="servizi">
-        <h2 style="margin-top:26px">Servizi principali</h2>
+        <h2 style="margin-top:20px">Servizi principali</h2>
         <div class="grid">
-          <div class="card">
-            <h3>Pulizia terrazzi e balconi</h3>
-            <p class="lead">Lavaggio profondo, rimozione muschio e alghe su gres, cotto, pietra e marmo.</p>
-          </div>
-          <div class="card">
-            <h3>Scale condominiali</h3>
-            <p class="lead">Spazzatura, lavaggio e sanificazione corrimano, pianerottoli e ringhiere.</p>
-          </div>
-          <div class="card">
-            <h3>Trattamenti protettivi</h3>
-            <p class="lead">Impermeabilizzanti anti-macchia e antiscivolo per pavimenti esterni.</p>
-          </div>
-          <div class="card">
-            <h3>Lucidatura e ripristino</h3>
-            <p class="lead">Cristallizzazione e lucidatura marmi/terrazzo, ripristino dopo lavori.</p>
-          </div>
-          <div class="card">
-            <h3>Pulizie post-cantiere</h3>
-            <p class="lead">Rimozione polveri, residui cementizi e macchie ostinate.</p>
-          </div>
-          <div class="card">
-            <h3>Servizi su misura</h3>
-            <p class="lead">Interventi straordinari, emergenze meteo e sgombero foglie.</p>
-          </div>
+          <div class="card"><h3>Pulizia terrazzi</h3><p class="lead">Rimozione muschio e lavaggio profondo.</p></div>
+          <div class="card"><h3>Scale condominiali</h3><p class="lead">Sanificazione corrimano e pianerottoli.</p></div>
+          <div class="card"><h3>Trattamenti protettivi</h3><p class="lead">Impermeabilizzanti anti-macchia.</p></div>
         </div>
       </section>
 
       <section id="prezzi">
-        <h2 style="margin-top:26px">Prezzi indicativi</h2>
-        <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px">
-          <div class="card">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <div>
-                <div style="font-weight:800">Terrazzo piccolo</div>
-                <div style="color:var(--muted);font-size:13px">fino a 10 m² — lavaggio profondo</div>
-              </div>
-              <div class="price">da 59€</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <div>
-                <div style="font-weight:800">Terrazzo medio</div>
-                <div style="color:var(--muted);font-size:13px">10–25 m² — rimozione muschio</div>
-              </div>
-              <div class="price">da 99€</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <div>
-                <div style="font-weight:800">Scale condominio</div>
-                <div style="color:var(--muted);font-size:13px">1 tromba scale — lavaggio e sanificazione</div>
-              </div>
-              <div class="price">da 79€/scala</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="recensioni">
-        <h2 style="margin-top:26px">Recensioni</h2>
-        <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px">
-          <div class="card">“Terrazzo come nuovo, via il verde!" — Cliente verificato ★★★★★</div>
-          <div class="card">“Veloci e professionali, consiglio vivamente." — Cliente verificato ★★★★★</div>
+        <h2 style="margin-top:20px">Prezzi indicativi</h2>
+        <div class="grid">
+          <div class="card"><strong>Terrazzo piccolo</strong> — da 59€</div>
+          <div class="card"><strong>Terrazzo medio</strong> — da 99€</div>
+          <div class="card"><strong>Scala condominio</strong> — da 79€</div>
         </div>
       </section>
 
       <section id="contatti">
-        <h2 style="margin-top:26px">Contatti</h2>
+        <h2 style="margin-top:20px">Contatti</h2>
         <div class="contact">
           <div>
-            <p style="color:var(--muted)">Scrivici su WhatsApp o manda una richiesta: rispondiamo in poche ore.</p>
-            <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
-              <div class="card">📞 <strong id="phoneDisplay">+39 3512601997</strong></div>
-              <div class="card">✉️ <strong id="emailDisplay">mouhamed.almou.2@gmail.com</strong></div>
-              <div class="card">📍 <strong>Parma, PR</strong></div>
-            </div>
+            <div class="card">📞 <strong id="phoneDisplay">+39 3512601997</strong></div>
+            <div class="card">✉️ <strong id="emailDisplay">mouhamed.almou.2@gmail.com</strong></div>
+            <div class="card">📍 <strong>Parma, PR</strong></div>
           </div>
-
           <aside>
             <form id="leadForm" class="card">
-              <label>Nome</label>
-              <input type="text" id="name" placeholder="Il tuo nome" required />
-              <label>Telefono</label>
-              <input type="tel" id="phone" placeholder="Es. 3331234567" required />
-              <label>Messaggio</label>
-              <textarea id="message" rows="4" placeholder="Descrivi terrazzo/scale, material e metratura" required></textarea>
-              <button type="submit">Invia richiesta</button>
-              <div style="font-size:12px;color:var(--muted);margin-top:6px">Compilando accetti di essere ricontattato per preventivo gratuito.</div>
+              <input type="text" id="name" placeholder="Nome" required />
+              <input type="tel" id="phone" placeholder="Telefono" required />
+              <textarea id="message" rows="3" placeholder="Messaggio" required></textarea>
+              <button type="submit">Invia su WhatsApp</button>
             </form>
           </aside>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div><strong>Pulizia Terrazzi & Scale</strong> • P.IVA [inserisci qui]</div>
-        <div style="color:var(--muted)">© <span id="year"></span></div>
-      </div>
+      <div><strong>Pulizia Terrazzi & Scale</strong> • Parma • © <span id="year"></span></div>
     </footer>
   </div>
 
   <script>
-    // CONFIG - Modifica qui i tuoi contatti
     const PHONE = '+393512601997';
-    const WHATSAPP_PRESET = 'Ciao, vorrei un preventivo per la pulizia di terrazzo/scale.\nQuant\'è il prezzo?';
     const EMAIL = 'mouhamed.almou.2@gmail.com';
-    const CITY = 'Parma';
+    const WHATSAPP_PRESET = 'Ciao, vorrei un preventivo per la pulizia di terrazzo/scale.';
 
-    // settare testo nella pagina
     document.getElementById('phoneDisplay').textContent = PHONE;
     document.getElementById('emailDisplay').textContent = EMAIL;
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // whatsapp link
     const waLink = 'https://wa.me/' + PHONE.replace(/[^0-9]/g,'') + '?text=' + encodeURIComponent(WHATSAPP_PRESET);
-    const whatsappEl = document.getElementById('whatsappLink');
-    whatsappEl.href = waLink;
-    whatsappEl.target = '_blank';
+    document.getElementById('whatsappLink').href = waLink;
+    document.getElementById('whatsappLink').target = '_blank';
 
-    // form handling
-    const form = document.getElementById('leadForm');
-    form.addEventListener('submit', function(e){
+    document.getElementById('leadForm').addEventListener('submit', function(e){
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
       const phone = document.getElementById('phone').value.trim();
@@ -230,12 +150,6 @@
       const composed = `Richiesta da ${name} - ${phone}\n${message}`;
       const wa = 'https://wa.me/' + PHONE.replace(/[^0-9]/g,'') + '?text=' + encodeURIComponent(composed);
       window.open(wa, '_blank');
-    });
-
-    document.getElementById('phoneDisplay').addEventListener('click', ()=>{
-      navigator.clipboard && navigator.clipboard.writeText(PHONE).then(()=>{
-        alert('Numero copiato negli appunti: ' + PHONE);
-      });
     });
   </script>
 </body>
